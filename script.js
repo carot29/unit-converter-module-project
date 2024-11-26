@@ -102,10 +102,12 @@ function calculate1() {
     var output2 = +val2.value * 1.609;
     output2 = output2.toFixed(6);
     val1.value = output2;
+    val2.value = "";
   } else {
     var output1 = +val1.value / 1.609;
     output1 = output1.toFixed(6);
     val2.value = output1;
+    val1.value = "";
   }
   // } else if (val1.value != "" && val2.value != "") {
   // Code to run if BOTH fields are empty
@@ -128,10 +130,12 @@ function calculate2() {
     var output2 = +val3.value / 3600;
     output2 = output2.toFixed(6);
     val4.value = output2;
+    val3.value = "";
   } else {
     var output1 = +val4.value * 3600;
     output1 = output1.toFixed(6);
     val3.value = output1;
+    val4.value = "";
   }
 }
 
@@ -148,10 +152,12 @@ function calculate3() {
     var output2 = +val5.value / 2.205;
     output2 = output2.toFixed(6);
     val6.value = output2;
+    val5.value = "";
   } else {
     var output1 = +val6.value * 2.205;
     output1 = output1.toFixed(6);
     val5.value = output1;
+    val6.value = "";
   }
 }
 
@@ -168,10 +174,12 @@ function calculate4() {
     var output2 = (+val7.value * 9 / 5) + 32;
     output2 = output2.toFixed(6);
     val8.value = output2;
+    val7.value = "";
   } else {
     var output1 = (+val8.value - 32) * 5 / 9;
     output1 = output1.toFixed(6);
     val7.value = output1;
+    val8.value = "";
   }
 }
 
